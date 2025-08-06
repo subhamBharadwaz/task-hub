@@ -1,0 +1,103 @@
+.container {
+  min-height: 100vh;
+  background: var(--gradient-subtle);
+  padding: 1rem;
+}
+
+.wrapper {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.brandContainer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.brandIcon {
+  width: 3rem;
+  height: 3rem;
+  background: var(--gradient-primary);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-glow);
+}
+
+.brandIcon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: hsl(var(--primary-foreground));
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.subtitle {
+  color: hsl(var(--muted-foreground));
+}
+
+.mainCard {
+  padding: 1.5rem;
+  background: var(--gradient-card);
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-elegant);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: hsl(var(--secondary) / 0.5);
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px solid hsl(var(--border));
+}
+
+.progressText {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.progressBar {
+  width: 8rem;
+  height: 0.5rem;
+  background: hsl(var(--muted));
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--gradient-primary);
+  transition: var(--transition-smooth);
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: hsl(var(--muted-foreground));
+  font-size: 0.875rem;
+}
